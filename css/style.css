@@ -198,28 +198,46 @@ header>span>img:nth-child(1) {
 #images {
     width: 250px;
     height: 300px;
-    animation: image 10s ease-in-out infinite;
+    animation: image 20s ease-in-out infinite;
     z-index: 7854978;
     margin-left: 50px;
 }
 
 @keyframes image {
     0% {
-        background-image: url('https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p159107_p_v8_aj.jpg');
+        background-image: url('../img/img1.jpg');
         width: 190px;
         height: 280px;
         background-repeat: no-repeat;
     }
 
-    50% {
-        background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmHiuWWaVA-K6qI7MSdR76S6K-GhTcoCrw4b5Plcsa9BBxMRf9ScZgWNYCK-KgtCZNgB4&usqp=CAU');
+    20% {
+        background-image: url('../img/img2.jpeg');
         width: 200px;
         height: 280px;
         background-repeat: no-repeat;
     }
 
+    40% {
+        background-image: url('../img/img3.jpeg');
+        width: 200px;
+        height: 280px;
+        background-repeat: no-repeat;
+    }
+    60% {
+        background-image: url('../img/img4.jpeg');
+        width: 200px;
+        height: 280px;
+        background-repeat: no-repeat;
+    }
+    80% {
+        background-image: url('../img/img5.jpg');
+        width: 200px;
+        height: 280px;
+        background-repeat: no-repeat;
+    }
     100% {
-        background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRerq5b4wzkFRD_6V0rw8omZz7RSnRORvAslb-Tw_pzxNTBE0j8hMKs5xRxrlup5BAPnxA&usqp=CAU');
+        background-image: url('../img/img6.jpeg');
         width: 200px;
         height: 280px;
         background-repeat: no-repeat;
