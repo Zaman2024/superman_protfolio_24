@@ -92,7 +92,9 @@ header>img:nth-child(1) {
 .fly img {
     width: 140px;
     height: auto;
+    position: relative;
     animation: sup-men 5s infinite;
+    animation-timing-function: cubic-bezier(.99,.04,.85,.67);
 }
 
 
@@ -198,7 +200,7 @@ header>span>img:nth-child(1) {
 #images {
     width: 250px;
     height: 300px;
-    animation: image 20s ease-in-out infinite;
+    animation: image 20s linear infinite;
     z-index: 7854978;
     margin-left: 50px;
 }
@@ -385,8 +387,9 @@ hr {
     display: flex;
     justify-content: space-between;
     padding: 50px;
-    background-image: url("https://astounding-dieffenbachia-fa6402.netlify.app/images/waterdrop.png");
-    background-color: rgba(255, 255, 255, 0.1);
+    /* background-image: url("../img/waterdrop.png"); */
+    /* background-color: rgba(8, 121, 23, 0.5); */
+    background-image:linear-gradient(to right, rgba(5, 248, 25, 0.067), rgba(250, 10, 10, 0.267), rgb(77, 153, 252)),url("../img/waterdrop.png");
 }
 
 .box {
@@ -495,37 +498,37 @@ svg {
 
 @keyframes anim1 {
     100% {
-        stroke-dashoffset: 132;
+        stroke-dashoffset: 224;
     }
 }
 
 @keyframes anim2 {
     100% {
-        stroke-dashoffset: 264;
+        stroke-dashoffset: 50;
     }
 }
 
 @keyframes anim3 {
     100% {
-        stroke-dashoffset: 176;
+        stroke-dashoffset: 308;
     }
 }
 
 @keyframes anim4 {
     100% {
-        stroke-dashoffset: 308;
+        stroke-dashoffset: 150;
     }
 }
 
 @keyframes anim5 {
     100% {
-        stroke-dashoffset: 308;
+        stroke-dashoffset: 20;
     }
 }
 
 @keyframes anim6 {
     100% {
-        stroke-dashoffset: 220;
+        stroke-dashoffset: 80;
     }
 }
 
