@@ -114,7 +114,7 @@ header>img:nth-child(1) {
 header>span {
     display: flex;
     justify-content: flex-end;
-    margin-left: 680px;
+    margin-left: 280px;
 }
 
 span img {
@@ -375,6 +375,7 @@ hr {
 /* _____________________________________Skill Ring___________________________________ */
 .parent {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 50px;
     /* background-image: url("../img/waterdrop.png"); */
@@ -1008,5 +1009,9 @@ svg {
         grid-template-rows: repeat(2, 1fr);
     }
 }
-
+@media screen and (min-width: 768px) and (max-width: 1238px){
+.header-text {
+    margin: 70px auto 15px 240px !important;
+}
+}
 /* For small screen */
