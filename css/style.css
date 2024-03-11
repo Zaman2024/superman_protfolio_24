@@ -101,7 +101,7 @@ header>img:nth-child(1) {
 
 @keyframes sup-men {
     0% {
-        transform: translateX(850%);
+        transform: translateX(250%);
         width: 0%;
     }
 
