@@ -695,11 +695,36 @@ svg {
     /* _____________skill ring_____________ */
     .parent {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr) !important;
+        grid-template-rows: repeat(3, 1fr) !important;
     }
 }
 /* **********------------------- */
+@media screen and (min-width: 433px)and (max-width: 768px){
+    .header-text{
+        margin: 70px auto 15px 140px;
+    }
+    .parent {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr) !important;
+        grid-template-rows: repeat(3, 1fr) !important;
+    }
+    header>span {
+        display: flex;
+        justify-content: flex-end;
+        margin-left: -80px !important;
+    }
+
+    span img {
+        height: 20px;
+        width: 20px;
+        position: relative;
+        margin: 0 3px;
+        animation: social 4s ease-in-out;
+    }
+
+}
+
 @media screen and (max-width: 768px) {
     body {
         border: 2px solid rgba(97, 97, 99, 1);
