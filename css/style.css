@@ -372,16 +372,6 @@ hr {
     align-items: center;
 }
 
-.x-men {
-    width: 100%;
-    height: auto;
-    opacity: 0.5;
-    margin: auto;
-    align-items: center;
-    justify-content: center;
-    margin-left: 400px;
-}
-
 /* _____________________________________Skill Ring___________________________________ */
 .parent {
     display: flex;
@@ -533,6 +523,183 @@ svg {
 }
 
 /* ________________________Media Query__________________________________ */
+@media screen and (max-width: 432px) {
+    body {
+        border: 2px solid rgba(97, 97, 99, 1);
+    }
+
+    header {
+        width: 60%;
+        height:auto;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    #photo {
+        border-radius: 100%;
+        width: 70px;
+        height: 70px;
+        margin-top: 2px;
+    }
+
+    header>img:nth-child(1) {
+        height: 50px;
+        width: 50px;
+        margin-left: 10px;
+        position: relative;
+        animation: logo 2s ease-in-out infinite alternate;
+    }
+
+    @keyframes logo {
+        from {
+            transform: scale(1.01);
+        }
+
+        to {
+            transform: scale(1.1);
+        }
+    }
+
+    h1 {
+        font-size: 1.8rem !important;
+    }
+
+    .header-text {
+        position: absolute;
+        background-color: transparent;
+        margin-left: 120px !important;
+        animation: header-text 5s ease;
+    }
+
+    @keyframes header-text {
+        0% {
+            transform: scale(0, 0);
+        }
+
+        100% {
+            transform: scale(0.75, 0.75);
+        }
+    }
+
+    /* **************************** */
+    .fly {
+        position: relative;
+        padding-top: 10px;
+        z-index: 1;
+    }
+    
+    .fly img {
+        width: 100px !important;
+        height: auto;
+        position: relative;
+        animation: sup-men 50s ease !important;
+        /* animation-timing-function: cubic-bezier(.99,.04,.85,.67); */
+    }
+    
+    @keyframes sup-men {
+        0% {
+            transform: translateX(250%) !important;
+            width: 0% !important;
+        }
+    
+        100% {
+            transform: translateX(-10%) !important;
+            width: 100% !important;
+        }
+    }
+    
+
+    header>span {
+        display: flex;
+        justify-content: flex-end;
+        margin-left: -75px !important;
+    }
+
+    span img {
+        height: 20px;
+        width: 20px;
+        position: relative;
+        margin: 0 3px;
+        animation: social 4s ease-in-out;
+    }
+
+    @keyframes social {
+        from {
+            transform: translateX(220%);
+        }
+
+        to {
+            transform: translateX(0%);
+        }
+    }
+
+    header>span>img:nth-child(1) {
+        margin-left: 4px;
+    }
+    #container{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    /***** Left section stard******* */
+    .left-section {
+        display: block;
+        background: linear-gradient(to top right, #130130, #6412fd);
+        width: 100% !important;
+        height: auto;
+        border-right: 5px solid #616163;
+        padding: 20px;
+        color: #dfd9d9;
+    }
+    
+    .left-section>p {
+        font-family: "Roboto Condensed", sans-serif;
+        font-size: 40px !important;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        background: linear-gradient(45deg, #ffa724, #ff3705);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+    .sup-logo {
+        text-align: center;
+        width: auto;
+        height: auto;
+        margin-left: 35px;
+    }
+    
+    .sup-logo>img {
+        padding-bottom: 170px;
+        width: 250px !important;
+        height: auto;
+    }
+    #images {
+        width: 300px;
+        height: 320px;
+        z-index: 7854978;
+        margin-left: 60px;
+    }
+    
+    /****** End Left Section *********/
+    .right-section{
+        width: 100% !important;
+    }
+    
+
+    
+
+    /* _____________skill ring_____________ */
+    .parent {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+/* **********------------------- */
 @media screen and (max-width: 768px) {
     body {
         border: 2px solid rgba(97, 97, 99, 1);
