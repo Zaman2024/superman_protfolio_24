@@ -1,2 +1,2 @@
-Basic project of css
+Basic project of css-01
 superman protfoli 
